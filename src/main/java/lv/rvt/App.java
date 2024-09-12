@@ -4,6 +4,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        // Make your Hello World programm!
+        // Programma, kura printē Hello World!
+
+        System.out.println("Hello World!");
     }
 }
