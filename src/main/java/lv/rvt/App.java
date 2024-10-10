@@ -6,34 +6,25 @@ public class App
 {
     public static void main( String[] args )
     {
-        //Koda sakums
+        
         Scanner scanner = new Scanner(System.in);
 
-        
+ 
+        int sum = 0;
+        int sk = 0;
+        while(true){
 
+        System.out.println("Give a number: ");
+        int number = Integer.valueOf(scanner.nextLine());
 
-        System.out.println("Give the first number:");
-        int first = Integer.valueOf(scanner.nextLine());
-        System.out.println("Give the second number:");
-        int second = Integer.valueOf(scanner.nextLine());
-
-
-        int suma = first + second;
-        int minus = first - second;
-        int multi = first * second;
-        double del = first / second;
-
-        System.out.println(first + "+" + second + "=" + suma);
-        System.out.println(first + "-" + second + "=" + minus);
-        System.out.println(first + "*" + second + "=" + multi);
-        System.out.println(first + "/" + second + "=" + del);
-
-
-       
-
-
-
-
-        //Koda beigas
+        if (number == 0) {
+            System.out.println("Number of numbers: " + sk);
+            System.out.println("Sum of the numbers: " + sum);
+            break;
+        }  else{   
+            sk = sk + 1;
+            sum = sum + number;
+            }
+        }
     }
 }
